@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about the Video Otomasyon Windows desktop workflow, its features, integrations, and privacy terms.">
+  <title>Video Otomasyon | Desktop video workflow</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="./">Video Otomasyon</a>
+      <nav aria-label="Legal information">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy-tr.html">Gizlilik (TR)</a>
+        <a href="terms-tr.html">Koşullar (TR)</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Windows desktop workflow for video creators</p>
+      <h1>Prepare, review, and publish short-form video clips from longer recordings.</h1>
+      <p class="lead">Video Otomasyon is a local Windows workflow that helps a creator transcribe a source recording, identify moments for clips, render selected edits, and review them before publishing.</p>
+      <div class="legal-links">
+        <a class="button-link primary" href="privacy.html">Read the Privacy Policy</a>
+        <a class="button-link" href="terms.html">Read the Terms of Service</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="workflow-heading">
+      <h2 id="workflow-heading">How the workflow works</h2>
+      <div class="grid">
+        <section class="card"><h3>1. Choose a source</h3><p>The operator selects a local video file they own or are authorized to process.</p></section>
+        <section class="card"><h3>2. Find candidate moments</h3><p>The workflow transcribes speech and can use optional AI-assisted selection and audio analysis to identify clip candidates.</p></section>
+        <section class="card"><h3>3. Render and review</h3><p>Selected moments can be rendered in supported layouts, with optional subtitles or dubbing. A Telegram bot can send previews and videos for review.</p></section>
+        <section class="card"><h3>4. Approve a destination</h3><p>Publishing integrations are optional. A user reviews the rendered video and gives a separate, explicit confirmation before a platform upload.</p></section>
+      </div>
+    </section>
+
+    <section aria-labelledby="features-heading">
+      <h2 id="features-heading">Features and controls</h2>
+      <ul>
+        <li>Speech transcription and clip selection from a local source recording.</li>
+        <li>Optional portrait, split-screen, landscape, and compilation render formats.</li>
+        <li>Optional translated subtitles and English dubbing.</li>
+        <li>Telegram-based review and approval controls before platform publishing.</li>
+        <li>Optional YouTube, Instagram, and TikTok publishing integrations, configured by the operator.</li>
+        <li>Local preference records for selected and rated clips.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="data-heading">
+      <h2 id="data-heading">Where information goes</h2>
+      <p>The desktop workflow stores source files, transcripts, rendered media, preference records, and platform credentials in the operator's local project workspace. It does not provide a hosted account or central application database.</p>
+      <ul>
+        <li><strong>Google Gemini:</strong> When optional AI features are used, selected audio and/or transcript text is sent to the Gemini API for clip selection, audio analysis, translation, or dubbing tasks.</li>
+        <li><strong>Telegram:</strong> When the review bot is used, it sends selected previews or rendered videos and approval controls to the configured Telegram chat.</li>
+        <li><strong>TikTok:</strong> The optional integration requests the <code>video.publish</code> permission, checks creator publishing settings, and sends the selected video and user-entered post settings only after the user confirms publishing.</li>
+        <li><strong>YouTube and Instagram:</strong> If configured and selected, the workflow uses the applicable platform integration to upload content after the review step.</li>
+      </ul>
+      <p>Each third-party provider processes information under its own terms and privacy practices. See the <a href="privacy.html">Privacy Policy</a> for detail.</p>
+    </section>
+
+    <section aria-labelledby="operator-heading">
+      <h2 id="operator-heading">Operator and support</h2>
+      <p>Operator: modmanclips</p>
+      <p>Support and privacy requests: <a href="mailto:emreutulu@gmail.com">emreutulu@gmail.com</a></p>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap footer-inner">
+      <p>Video Otomasyon is an independent desktop software project. It is not endorsed by or affiliated with TikTok, Google, Telegram, YouTube, or Instagram.</p>
+      <div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="privacy-tr.html">Gizlilik Politikası</a><a href="terms-tr.html">Kullanım Koşulları</a></div>
+    </div>
+  </footer>
+</body>
+</html>
